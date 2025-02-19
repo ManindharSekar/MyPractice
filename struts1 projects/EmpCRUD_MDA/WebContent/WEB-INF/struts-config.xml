@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+"http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+<form-beans>
+<form-bean  name="EMC" type="controller.Employee"></form-bean>
+
+</form-beans>
+
+
+<action-mappings>
+
+<action path="/empcrudformsave" name="EMC" type="controller.EmpCrudController" parameter="empsave">
+<forward name="success" path="/success.jsp"></forward>
+<forward name="failure" path="/failure.jsp"></forward>
+</action>
+<action path="/empcrudformupdate" name="EMC" type="controller.EmpCrudController" parameter="empupdate">
+<forward name="success" path="/success.jsp"></forward>
+<forward name="failure" path="/failure.jsp"></forward>
+</action>
+<action path="/empcrudformdelete" name="EMC" type="controller.EmpCrudController" parameter="empdelete">
+<forward name="success" path="/success.jsp"></forward>
+<forward name="failure" path="/failure.jsp"></forward>
+</action>
+<action path="/empcrudformfind" name="EMC" type="controller.EmpCrudController" parameter="empfind">
+<forward name="find" path="/find.jsp"></forward>
+</action>
+<action path="/empcrudformfindAll" name="EMC" type="controller.EmpCrudController" parameter="empfindAll">
+<forward name="findAll" path="/findAll.jsp"></forward>
+</action>
+
+
+
+
+
+<action path="/changelang" type="controller.ChangeLangController">
+<forward name="index" path="/index.jsp"></forward>
+</action>
+</action-mappings>
+
+<message-resources parameter="resources/EmpCrud"></message-resources>
+</struts-config>
+
+
+
+

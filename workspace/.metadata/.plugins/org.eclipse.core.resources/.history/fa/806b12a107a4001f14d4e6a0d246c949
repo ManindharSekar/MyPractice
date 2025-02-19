@@ -1,0 +1,72 @@
+package com.mani;
+
+import java.util.Date;
+
+import org.joda.time.LocalDate;
+
+public class Details {
+	
+	private String name;
+	private String companyName;
+	private String streetAddress;
+	private String city;
+	private String projectName;
+	private String toName;
+	private int invoiceNo;
+	private Date dueDate;
+	String productName;
+	int unitPrice;
+	int quantity;
+	int total;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCompanyName() {
+		return companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+	public String getStreetAddress() {
+		return streetAddress;
+	}
+	public void setStreetAddress(String streetAddress) {
+		this.streetAddress = streetAddress;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getProjectName() {
+		return projectName;
+	}
+	public void setProjectName(String projectName) {
+		this.projectName = projectName;
+	}
+	public String getToName() {
+		return toName;
+	}
+	public void setToName(String toName) {
+		this.toName = toName;
+	}
+	public int getInvoiceNo() {
+		return invoiceNo;
+	}
+	public void setInvoiceNo(int invoiceNo) {
+		this.invoiceNo = invoiceNo;
+	}
+	public Date getDueDate() {
+		return dueDate;
+	}
+	public void setDueDate(Date date) {
+		this.dueDate = date;
+	}
+	
+
+}

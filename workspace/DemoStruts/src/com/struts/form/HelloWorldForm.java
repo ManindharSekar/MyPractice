@@ -1,0 +1,16 @@
+package com.struts.form;
+
+import org.apache.struts.action.ActionForm;
+
+public class HelloWorldForm extends ActionForm {
+
+	private String hello;
+
+	public String getHello() {
+		return hello;
+	}
+
+	public void setHello(String hello) {
+		this.hello = hello;
+	}
+}
